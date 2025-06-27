@@ -5,21 +5,21 @@
 class Envcmd < Formula
   desc "Command line tool for running per-environment commands."
   homepage "https://github.com/brooknullsh/envcmd"
-  version "0.2.15"
+  version "0.2.20"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/brooknullsh/envcmd/releases/download/v0.2.15/envcmd_Darwin_x86_64.tar.gz"
-      sha256 "9788bd3363e925195edbe9764e800167006ab21e4a71835835bbb0b5abec7dae"
+      url "https://github.com/brooknullsh/envcmd/releases/download/v0.2.20/envcmd_Darwin_x86_64.tar.gz"
+      sha256 "ef4faee91aaee5ae19feba1160bf7f8d919b8df974140660a51a3bee54bb5fc5"
 
       def install
         bin.install "envcmd"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/brooknullsh/envcmd/releases/download/v0.2.15/envcmd_Darwin_arm64.tar.gz"
-      sha256 "38a7a6eaba94cab5d8defc136ab8e18c244a2b7c1175c62a6539bd921c350e67"
+      url "https://github.com/brooknullsh/envcmd/releases/download/v0.2.20/envcmd_Darwin_arm64.tar.gz"
+      sha256 "9dd8cfffb63f5449d0bbccaf27d91feb9f1039f207dacf6fcb740da748f23bdd"
 
       def install
         bin.install "envcmd"
@@ -29,15 +29,15 @@ class Envcmd < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/brooknullsh/envcmd/releases/download/v0.2.15/envcmd_Linux_x86_64.tar.gz"
-      sha256 "7920eec1d06debe4e551e7037b37ea4ad71592ec0b3943f343b2cf58d5e3e405"
+      url "https://github.com/brooknullsh/envcmd/releases/download/v0.2.20/envcmd_Linux_x86_64.tar.gz"
+      sha256 "2eea884b26b65470a4058006f5f7b471bdf8185f2535d081603f452b717bda9a"
       def install
         bin.install "envcmd"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/brooknullsh/envcmd/releases/download/v0.2.15/envcmd_Linux_arm64.tar.gz"
-      sha256 "824a946abf956e90fc5855a803950664c7d6a9c01a0a22b99b7c1079bb8d2107"
+      url "https://github.com/brooknullsh/envcmd/releases/download/v0.2.20/envcmd_Linux_arm64.tar.gz"
+      sha256 "3ab221f5f7fa8dd2c4e676f6e50fad79e87d6ccf22231e910ec3535adaf8a120"
       def install
         bin.install "envcmd"
       end
